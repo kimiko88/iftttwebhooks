@@ -1,8 +1,8 @@
-# MyHttpRequest
+# iftttwebooks
 
-[![Build Status](https://travis-ci.org/kimiko88/myhttprequest.svg?branch=master)](https://travis-ci.org/kimiko88/myhttprequest) [![Coverage Status](https://coveralls.io/repos/github/kimiko88/myhttprequest/badge.svg)](https://coveralls.io/github/kimiko88/myhttprequest)
+[![Build Status](https://travis-ci.org/kimiko88/iftttwebooks.svg?branch=master)](https://travis-ci.org/kimiko88/iftttwebooks) [![Coverage Status](https://coveralls.io/repos/github/kimiko88/iftttwebooks/badge.svg)](https://coveralls.io/github/kimiko88/iftttwebooks)
 
-A simple library to send HTTP request.
+A simple library to use ifttt webooks. No external dependency
 
 ### Installing
 
@@ -11,21 +11,13 @@ A step by step series of examples that tell you how to get a development env run
 Say what the step will be
 
 ```
-npm i myhttprequest
+npm i iftttwebooks
 ```
 
 ### Example
 
-#### GET request 
+#### Send request 
 ```
-const request = require('myhttprequest')
-var res = await request.getContent('https://google.com')
-```
-
-
-#### POST request 
-```
-const request = require('myhttprequest')
-var res = await request.getContent('http://dummy.restapiexample.com/api/v1/create', 'POST', {
-    "Content-type": "application/json; charset=UTF-8"}, {name: "foo",salary: "bar",age: 12})
+const iftttwebhooks = require('iftttwebooks')
+var res = await iftttwebhooks.sendRequest('test','testsecret', {"value1":"prova"})
 ```
