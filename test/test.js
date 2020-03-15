@@ -6,6 +6,6 @@ describe('iftttwebooks', () => {
         var res = await iftttwebooks.sendRequest('test','testsecret', {"value1":"prova"})
         assert.notEqual(res.data, undefined, "data is undefined")
         assert.notEqual(res.headers, undefined)
-        assert.equal(res.code, 200)
+        assert.equal(res.code, 401)
     })
 })
