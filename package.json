@@ -1,6 +1,6 @@
 {
   "name": "simple-ifttt-webhooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple ifttt webhooks",
   "main": "iftttwebooks.js",
   "devDependencies": {
